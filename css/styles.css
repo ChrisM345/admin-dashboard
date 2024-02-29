@@ -11,9 +11,13 @@ img{
     width: 40px;
     text-align: center;
 }
+
+h3 {
+    font-size: 2rem;
+}
 .container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
     gap: 25px;
 }
 
@@ -32,7 +36,6 @@ ul li{
     display: flex;
     align-items: center;
     gap: 5px;
-
 }
 
 .header{
@@ -40,12 +43,72 @@ ul li{
     border: red solid;
 }
 
+.header-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 25px;
+}
+
+.header-top-left{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 13fr;
+}
+
+input[type="search"] {
+    border-radius: 25px;
+    background-color: lightgray;
+    border: none;
+    padding-left: 10px;
+}
+
+.header-top-right{
+    grid-column: 2/3;
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.header-bot{
+    display: grid;
+}
+
+.header-bot p{
+    display: inline;
+}
+
+.header-intro{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.header-menu{
+    grid-column: 6/6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: lightblue;
+    color: white;
+}
+
+
 .projects{
     border: yellow solid;
     grid-column: 2 / 4;
     background-color: var(--main-content-color);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
 }
 
 .right-column{
