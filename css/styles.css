@@ -1,5 +1,5 @@
 :root{
-    --main-content-color: #f4f4f4
+    --main-content-color: #dbeafe
 }
 
 *{
@@ -21,11 +21,12 @@ h3 {
 }
 
 .navigation{
-    background-color: lightblue;
+    background-color: #0ea5e9;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    border: purple solid;
+    height: 100vh;
 }
+
 
 ul li{
     color: black;
@@ -39,8 +40,9 @@ ul li{
 
 .header{
     grid-column: 2 / 5;
-    border: red solid;
     padding-bottom: 20px;
+    height: 12vh;
+    background-color: white;
 }
 
 .header-top{
@@ -103,19 +105,19 @@ button{
 
 
 .projects{
-    border: yellow solid;
     grid-column: 2 / 4;
     background-color: var(--main-content-color);
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    height: 84.5vh;
 }
 
 .right-column{
-    border: green solid;
     grid-column: 4 / 5;
     background-color: var(--main-content-color);
     display: grid;
+    padding-top: 25px;
 }
 
 .card{
@@ -126,6 +128,7 @@ button{
     width: 400px;
     border-radius: 15px;
     position: relative;
+    max-height: 400px;
 }
 
 .projects .card{
@@ -166,4 +169,22 @@ button{
 .handle{
     display: flex;
     gap: 15px;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.p-projects, .announcements{
+    background-color: #dbeafe;
+    padding-left: 25px;
+}
+
+.trending-section{
+    height: 40vh;
+}
+
+.trending-title{
+    padding-left: 25px;
 }
